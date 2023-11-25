@@ -11,7 +11,7 @@ public class Q01 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-
+//test
 		n = s.nextInt();
 		m = s.nextInt();
 		a = s.nextInt();
