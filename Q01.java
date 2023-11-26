@@ -1,4 +1,4 @@
-package java;
+package test;
 
 import java.util.Scanner;
 
@@ -34,7 +34,7 @@ public class Q01 {
 		arr[x][y] = -1; // 클리어
 
 		for (int i = 0; i < 4; i++) {
-
+			z = (z + 3) % 4;
 			int n2 = x + x1[z];
 			int m2 = y + y1[z];
 			if (n2 >= 0 && m2 >= 0 && n2 < n && m2 < m) {
@@ -46,8 +46,9 @@ public class Q01 {
 			}
 		}
 		// 후진
-		int n3 = x + x1[z];
-		int m3 = y + y1[z];
+		int d = (z + 2) % 4;
+		int n3 = x + x1[d];
+		int m3 = y + y1[d];
 		if (n3 >= 0 && m3 >= 0 && n3 < n && m3 < m && arr[n3][m3] != 1) {
 			clean(n3, m3, z);
 		}
