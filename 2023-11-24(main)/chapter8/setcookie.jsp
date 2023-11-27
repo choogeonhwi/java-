@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <% 
 Cookie i=new Cookie("testCookie","FirstCookie");
 //쿠키 생성
@@ -16,7 +16,7 @@ response.addCookie(i);
 <title>Insert title here</title>
 </head>
 <body>
-<h2>쿠키 처음 설정 중.</h2>
+	<h2>쿠키 처음 설정 중.</h2>
 
 </body>
 </html>

@@ -12,15 +12,13 @@ public class LogicalIOperator {
 		System.out.println(3 != 2);
 		System.out.println(!(3 != 2));
 		System.out.println("===================");
-		System.out.println((3>2)&&(3>4));
-		//참and거짓=거짓
-		System.out.println((3!=2)||(-1>0));
-		//같지않다(참)or거짓=참
-		System.out.println((3!=2)^(-1>0));
-		//참XOR거짓=참
+		System.out.println((3 > 2) && (3 > 4));
+		// 참and거짓=거짓
+		System.out.println((3 != 2) || (-1 > 0));
+		// 같지않다(참)or거짓=참
+		System.out.println((3 != 2) ^ (-1 > 0));
+		// 참XOR거짓=참
 		System.out.println();
-	
-	
-	
+
 	}
 }

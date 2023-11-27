@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file = "h01.jsp" %>
-<%@ page import="java.util.Calendar"
- %>
+	<%@ include file="h01.jsp"%>
+	<%@ page import="java.util.Calendar"%>
 
-<%! 
+	<%! 
  public String c(){
 	 Calendar c1= Calendar.getInstance();
 	 c1.add(Calendar.DATE, 1);
@@ -22,6 +21,6 @@
      return y+"-"+m+"-"+d;
  }
  %>
- <%= c() %>
+	<%= c() %>
 </body>
 </html>

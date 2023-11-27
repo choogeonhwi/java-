@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,13 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-<h3>세션값</h3>
+	<center>
+		<h3>세션값</h3>
 
-</center>
-<hr> 가져온 세션값
-<hr>
-<% 
+	</center>
+	<hr>
+	가져온 세션값
+	<hr>
+	<% 
 // 세션 내장 객체의 메소드는 세션이름으로 값을 가져옴
 Object o =  session.getAttribute("test");
 // 다운 캐스팅

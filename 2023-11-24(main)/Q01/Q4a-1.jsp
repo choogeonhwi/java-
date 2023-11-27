@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,14 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%! int a =337;
+	<%! int a =337;
 int getInt(){
 	return a;
 	
 }
 
 %>
-<% out.print(getInt());  %>	
+	<% out.print(getInt());  %>
 
 </body>
 </html>

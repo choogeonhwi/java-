@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<%@ page errorPage="ep.jsp" %>
+<%@ page errorPage="ep.jsp"%>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-name 파라미터:
-<%
+	name 파라미터:
+	<%
 %>
 
 	<%= request.getParameter("name").toUpperCase() %>
