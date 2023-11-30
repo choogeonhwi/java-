@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+
+    <script>
+        document.write("<h1>컴퓨터 가위바위보</h1>");
+        var g = prompt("가위 바위 보 선택", "가위");
+        var gn; // 사용자가 발생한 숫자
+
+        switch (g) {
+            case "가위": gn = 1; break;
+            case "바위": gn = 2; break;
+            case "보": gn = 3; break;
+
+
+
+            default: alert("잘못 작성"); location.reload(); //새로고침
+                break;
+
+
+
+                // 0~0,999...사이 난수
+                // *3 = 0~2.999...
+                //.floor(random)*3 // 0~2
+                //c :컴퓨터가 발생한 숫자
+                var c = Math.floor(Math.random() * 3) + 1; //  1~3
+                document.write("<img sre='이미지/math_img_" + c + ".jpg");
+
+                //가위 바위 보 비교
+                if (gn == c) {
+                    document.write("<img sre='이미지/game_1.jpg'>");
+
+                } else {
+                    document.write("<img sre='이미지/game_2.jpg'>");
+
+                }
+
+        }
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

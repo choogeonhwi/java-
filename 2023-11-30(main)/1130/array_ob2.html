@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var arr_1 = ["사당", "교대", "방배", "강남"];
+        var arr_2 = ["신사", "압구정", "옥수"];
+
+        result = arr_1.join("_"); //배열 값들을 -붙여 연결
+        console.log(result); // log 메소드가 브라우저에 콘솔로 출력하는 기능
+
+        result = arr_1.concat(arr_2); //연결하는 기능
+        console.log(result);
+
+
+        result = arr_1.slice(1, 3);
+        console.log(result); //인덱스 1~2까지 잘라내는 기능
+
+        arr_1.sort(); //가나다순 정렬
+        console.log(arr_1);
+
+        arr_2.reverse(); //역순 정렬
+        console.log(arr_2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

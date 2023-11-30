@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var c = 0;
+
+        //함수호출
+        myF(); //호이스팅 
+        //함수구현
+        function myF() {
+            c++;
+            document.write("hello" + c, "<br>");
+
+        }
+        //함수호출
+        myF();
+        // tF();
+
+        var tF = function () {
+            c++;
+            document.write("bye" + c, "<br>");
+
+        }
+        tF();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

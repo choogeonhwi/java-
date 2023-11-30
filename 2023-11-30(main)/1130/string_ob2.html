@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userEmail = prompt("당신 이메일 주소?");
+        var arrUrl = [".co.kr", ".com", ".net", ".or.kr", ".go.kr"]
+        var check1 = false;
+        var check2 = false;
+
+        //1부터 ~ ex) a@a.com (0), @a.com(x)
+        if (userEmail.indexOf("@") > 0) {
+            check1 = true;
+        }
+        for (var i = 0; i < arrUrl.length; i++) {
+            // .co.kr,  a.co.kr, @.co.kr, a@a.co.kr
+            if (userEmail.indexOf(arrUrl[i]) > 2) {
+                check2 = true;
+
+            }
+        }
+
+        if (check1 && check2) {
+            document.write(userEmail);
+        } else {
+            alert("이메일 형식이 잘못됨");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
