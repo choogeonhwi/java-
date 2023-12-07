@@ -1,0 +1,10 @@
+h2{
+    color: blue;
+}
+p{
+    font-size: 0.9em;
+    /* 90%=em */
+    line-height: 2.0;
+    /* 줄간격 */
+    
+}

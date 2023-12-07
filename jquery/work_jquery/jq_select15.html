@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js">
+    //  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"><//script>
+
+  </script>
+  <script>
+    $(function () {
+      // $(".txt1").closest("div").css({ "border": "2px dashed #00f" })
+      //가까운 요소
+      // $(".txt1").parents().css({ "border": "2px solid #f00" })
+      //div 2개 , 바디,htnl 요소 선택
+      // $(".txt1").parents("div").css({ "border": "2px solid #f00" })
+      //div2개 
+      // $(".txt1").parents("body").css({ "border": "2px solid #f00" })
+      //바디1개
+      $(".txt1").parents("html").css({ "border": "2px solid #f00" })
+      //html1개
+      
+
+    });
+
+  </script>
+</head>
+
+<body>
+<h1 class="title">선택자</h1>
+    <div>
+<div>
+  <p class="txt1">내용</p>
+</div>
+
+    </div>
+</body>
+
+</html>

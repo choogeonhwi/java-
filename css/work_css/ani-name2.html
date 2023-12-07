@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            padding: 20px;
+            animation-name: moving;
+            animation-direction: alternate;
+            animation-iteration-count: 2; 
+            /* // infinite; */
+        }
+
+        @keyframes moving {
+            form{
+                width: 200px;
+                background: #faef7c;
+                transform: scale(0.5) rotate(15deg);
+            }
+            to{
+                width: 400px;
+                background: #ff9400;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>css3 ani</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js">
+    //  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"><//script>
+
+  </script>
+  <script>
+    $(function () {
+
+  
+      $("#m1 li:nth-child(1)").css({"background-color":"#ff0"});
+      $("#m1 li:nth-child(2n)").css({"border":"2px dashed #0ff"});
+      //짝수 요소
+      // $("#m2 li:nth-last-child(1)").css({"border":"2px dashed #00f"});
+      //뒤에서 첫번째 요소
+      $("#m2 li:nth-last-child(0)").css({"border":"2px dashed #00f"});
+
+ 
+    
+
+    });
+
+  </script>
+</head>
+
+<body>
+<h1> 탐색자</h1>
+<ul  id="m1">
+<li>내용1-1</li>
+<li>내용1-2</li>
+<li>내용1-3</li>
+<li>내용1-4</li>
+
+</ul>
+<ul  id="m2">
+<li>내용2-1</li>
+<li>내용2-2</li>
+<li>내용2-3</li>
+
+</ul>
+<ul  id="m2">
+<li>내용3-1</li>
+<li>내용3-2</li>
+<li>내용3-3</li>
+
+</ul>
+</body>
+
+</html>

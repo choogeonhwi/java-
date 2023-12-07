@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .box{
+        border: 2px solid green;
+        width: 100px;
+        text-align: center;
+        /* 텍스트 정렬 */
+
+    }
+    /* 마우스 올렸을ㄸ ㅐ처리 */
+    .box:hover{
+        /* transform: rotate(15deg); */
+        /* //15도 기운다 */
+        -moz-transform: rotate(15deg);
+        /* 파이어폭스에서 적용 */
+        -o-transform: rotate(15deg);
+ /* 오페라 적용 */
+ -ms-transform: rotate(15deg);
+ /* /엣지사용 */
+ -webkit-transform: rotate(15deg);
+ 
+</style>
+</head>
+<body>
+    
+<div class="box">mouse over</div>
+    
+</body>
+</html>
