@@ -1,0 +1,40 @@
+<!-- dateob2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var today=new Date();
+        var NY=today.getFullYear();
+        var TD=new Date(NY,11,31);
+        var DT = TD.getTime();
+        var TD2 = today.getTime();
+        // var diffD= TD.getTime(); - today.getTime();
+        var diffD = DT -TD2;
+        var rul=diffD/1000;
+        // var rul2=diffD/(1000*60);
+        // var rul2=diffD/(1000*60*60);
+        // var rul2=diffD/(1000*24*60*60);
+        var rul2= Math.floor(diffD/(1000*24*60*60));
+            // 정수형 변환
+
+            document.write("<h1>옿늘부터 올해 연말까지 남은 날짜</h1>")
+            document.write("<h1>D-DAY"+rul2+"일</h1>")
+           document.write("!@#@!!@#@!#->>>>"+today,"<br>") ;
+           document.write("!@#@!!@#@!#->>>>"+NY,"<br>"); 
+           document.write("!@#@!!@#@!#->>>>"+TD,"<br>") ;
+           
+
+            //첫 시작부터 밀리초로 
+           document.write("!@#@!!@#@!#->>>>"+DT,"<br>") ;
+           document.write("!@#@!!@#@!#->>>>"+TD2,"<br>") ;
+           document.write("!@#@!!@#@!#->>>>"+diffD,"<br>") ;
+           document.write("!@#@!!@#@!#->>>>"+rul,"<br>") ;
+           </script>
+</head>
+<body>
+    
+</body>
+</html>

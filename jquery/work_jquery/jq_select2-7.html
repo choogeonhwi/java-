@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/jquery.js">
+    //  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"><//script>
+
+  </script>
+  <script>
+    $(function () {
+      var obj=["서울","부산","전주"]
+      //배열 정보
+  $(obj).each(function(i,o){;
+    //인덱스, 배열값
+   console.log(i+":",o);
+  });
+  console.log("=== the end 1===");
+  
+  $.each($("#m1"), function(i,o){
+  console.log(i+":",o);
+  
+});
+console.log("=== the end 2===");
+
+$.each($("#m1 li"), function(i,o){
+    console.log(o);
+  });
+    });
+
+  </script>
+</head>
+
+<body>
+<h1> 탐색자</h1>
+
+<ul  id="m1">
+<li>내용1-1</li>
+<li>내용1-2</li>
+</ul>
+
+
+
+
+</body>
+
+</html>

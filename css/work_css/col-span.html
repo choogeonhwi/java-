@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.m{
+    column-count: 5 ;
+    /* //단 고정3개
+    //단 경계 */
+    column-rule: 2px dotted black;
+    column-gap: 50px; 
+    /* //여백 */
+    margin: 20px auto;
+    padding: 20px;
+}
+section{
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.m h3{
+    break-after: column;
+}
+.no-col{
+    background-color: #ccc;
+    margin: 10px 3px;
+    padding: 20px;
+    border-radius: 5px;
+    column-span: all;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2>건강</h2>
+        </div>
+        <div class="m">
+            <p>
+    <h3>코코넛 오일</h3>
+    남미 파나마에 코코넛 오일 한컵이면 무적이다 라는 이야기가 떠돈다
+            </p>
+
+            <p>
+    <h3>블루베리</h3>
+    남미 파나마에 코코넛 오일 한컵이면 무적이다 라는 이야기가 떠돈다
+            </p>
+
+            <p>
+    <h3>아몬드</h3>
+    남미 파나마에 코코넛 오일 한컵이면 무적이다 라는 이야기가 떠돈다
+            </p>
+            
+</section>
+<div class="no-col"></div>
+            <p>
+    <h3>케일</h3>
+    남미 파나마에 코코넛 오일 한컵이면 무적이다 라는 이야기가 떠돈다
+
+            </p>
+    </div>
+</body>
+</html>

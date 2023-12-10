@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js">
+        //  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"><//script>
+        
+    </script>
+    <script>
+$(function(){
+var style_1={
+"background-color":"#0ff"
+,"border":"2px solid #f00"
+}
+var style_2={
+"background-color":"#0ff"
+,"border":"2px dashed #f00"
+}
+//JQ 변수로 처리
+//  $(".txt").css(style_1);
+ $(".txt").prev().css(style_1);
+//  $(".txt").css(style_2);
+// 이전 요소 선택 
+//  $(".txt + p").css(style_2);
+ // 다음 요소 선택
+//  $(".txt").next().css(style_2);
+ // 다음 요소 선택
+ $(".txt").next().next().css(style_2);
+//  *2
+}); 
+
+    </script>
+</head>
+<body>
+  <div id="wrap">
+    <h1>인접 관계 선택자 </h1>
+    <p>내용1</p>
+    <p class="txt">내용2</p>
+    <h3>내용3</h3>
+    <!-- 요소가 끊기면 다음으로 점프는 불가능 -->
+    <p>내용4</p>
+  </div>
+</body>
+</html>

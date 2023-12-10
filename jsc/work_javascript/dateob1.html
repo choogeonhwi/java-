@@ -1,0 +1,39 @@
+<!-- dateob1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var today=new Date(); //데이트 객체 생성
+        var nowmonth= today.getMonth()+1;
+        var nowD= today.getDate();
+        var nowDay= today.getDay();
+        var w=new Array("일","월","화","수","목","금","토")
+
+        var worldC=new Date(2002,12,30);
+        var TM=worldC.getMonth();
+        var TD=worldC.getDate();
+        var TDAY=worldC.getDay();
+        
+        document.write("<h1>월드컵 날짜 정보</h1>");
+        document.write(worldC,"<br>");
+        document.write("2002 월컵 몇 월:"+TM,"<br>");
+        document.write("2002 월컵 몇 월:"+TD,"<br>");
+        document.write("2002 월컵 몇 월:"+w[TDAY] ,"<br>");
+
+
+        document.write("<h1>오늘날짜정보</h1>");
+        document.write(today,"<br>");
+        document.write("현재월 "+nowmonth,"<br>");
+        document.write("현재일" +nowD,"<br>");
+        // document.write("현재요일"+ nowDay,"<br>");
+        document.write("현재요일"+ w[nowDay],"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
