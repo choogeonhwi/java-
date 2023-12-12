@@ -213,7 +213,7 @@ select 5
 ,decode('a','a','1')
 ,decode('a','b','1')
 
-,decode('a','b','1','2')
+,decode('aa','b','123','aa','c')
 ,decode('a','b','1','2')
 from dual;
 
