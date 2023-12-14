@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .di {
+            border: 1px solid black;
+        }
+
+        #a {
+            border: 1px solid black;
+            height: 1px;
+            margin: 3px;
+            padding: 50px 0;
+            line-height: 1px;
+        }
+
+        #aa {
+            transform: translate(10%, 0%);
+        }
+
+
+        #b {
+            border: 1px solid black;
+            margin: 3px;
+            width: 100px;
+            height: 500px;
+        }
+
+        #bb {
+            transform: translate(0%, 180%);
+        }
+
+        /* #c{
+            border: 1px solid black;
+            height: 197px;
+            width: 1787px;
+            margin: 3px;
+            position: absolute;
+            left: 6%;
+            line-height : 500px;
+            height: 497px;
+        } */
+
+        #c {
+            margin: 0;
+            width: 1790px;
+            height: 500px;
+            border: 1px solid black;
+            position: absolute;
+            line-height: 500px;
+            transform: translate(6%, 0%);
+        }
+
+        #d {
+            border: 1px solid black;
+            height: 100px;
+            margin: 3px;
+            line-height: 100px;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="di">
+        <div id="a">
+            <div id="aa">
+                <a href="#c" target="_blank">공지사항</a>
+                <a href="#c" target="_blank">| 게시판</a>
+                <a href="#c" target="_blank">| FAQ</a>
+                <a href="#c" target="_blank">| QnA</a>
+            </div>
+        </div>
+        <p id="c">공지사항입니다.</P>
+        <div id="b">
+            <div id="bb">
+                <a href="#c" target="_blank">Java</a> <br>
+                <a href="#c" target="_blank">JSP </a> <br>
+                <a href="#c" target="_blank">Oracle </a> <br>
+                <a href="#c" target="_blank">HTML </a> <br>
+                <a href="#c" target="_blank">CSS </a> <br>
+            </div>
+        </div>
+        <p id="d">Since 2021</P>
+    </div>
+</body>
+
+</html>
