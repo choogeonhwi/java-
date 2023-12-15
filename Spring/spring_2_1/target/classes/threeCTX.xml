@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="T" class="Q3_5.Three"></bean>
+<!-- Calculator 클래스로 객체를 생성 -->
+
+
+<bean id="my" class="Q3_5.MyThree">
+<!-- MyCalculator 클래스로 객체를 생성 -->
+
+
+<property name="t">
+	<!-- setter으로 호출 -->
+	
+<!-- 	bean id:"calculator" 의 객체 -->
+<ref bean="T"/> 
+</property>
+
+<!-- setter 호출 -->
+<property name="a" value="129"></property>
+</bean>
+</beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="M" class="Q3_8.Median"></bean>
+<!-- Calculator 클래스로 객체를 생성 -->
+
+
+<bean id="my" class="Q3_8.MyMedian">
+<!-- MyCalculator 클래스로 객체를 생성 -->
+
+
+<property name="m">
+	<!-- setter으로 호출 -->
+	
+<!-- 	bean id:"calculator" 의 객체 -->
+<ref bean="M"/> 
+</property>
+
+<!-- setter 호출 -->
+<property name="a" value="20"></property>
+<property name="b" value="33"></property>
+<property name="c" value="100"></property>
+</bean>
+</beans>
