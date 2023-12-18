@@ -1,0 +1,40 @@
+package Q6_4;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+public class MainAnimation {
+	public static void main(String[] args) {
+		String configLoc = "classpath:animationCTX.xml";
+		String configLoc2 = "classpath:animationCTX2.xml";
+				AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLoc,configLoc2);
+				
+				// getBean 메소드로 객체정보 가져옴
+				Animation a= ctx.getBean("a",Animation.class);
+				
+				System.out.println(a.getT());
+				System.out.println(a.getY());
+				System.out.println(a.getD());
+				System.out.println("==============");
+				
+				AnimationInfo my= ctx.getBean("an",AnimationInfo.class);
+				Animation an = my.getAnimation();
+				
+			
+				System.out.println(an.getT());
+				System.out.println(an.getY());
+				System.out.println(an.getD());
+				System.out.println("==============");
+				
+				Animation a2= ctx.getBean("a2", Animation.class);
+				System.out.println(a2.getT());
+				System.out.println(a2.getY());
+				System.out.println(a2.getD());
+				
+				
+		
+			
+				ctx.close();
+			}
+}
