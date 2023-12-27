@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="n" class="com.lgy.spring_6_5.Nasdaq">
+<constructor-arg value="tesla"> </constructor-arg>
+
+
+<property name="r">
+<value>6</value>
+</property>
+
+<property name="a">
+<list>
+<value>모델x</value>
+<value>모델s</value>
+</list>
+</property>
+
+</bean>
+
+<bean id="ni" class="com.lgy.spring_6_5.NasdaqInfo">
+<property name="nasdaq">
+<ref bean="n"></ref>
+</property>
+
+</bean>
+</beans>

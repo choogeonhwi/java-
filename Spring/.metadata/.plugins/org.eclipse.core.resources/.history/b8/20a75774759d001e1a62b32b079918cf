@@ -1,0 +1,22 @@
+package Q6_3;
+
+
+
+public class SingerInfo {
+	
+private Singer professor;
+
+public Singer getProfessor() {
+	return professor;
+}
+
+public void setProfessor(Singer professor) {
+	this.professor = professor;
+}
+
+
+
+	
+		}
+
+

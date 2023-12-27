@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+content.jsp 입니다.
+
+https://www.google.com/webhp?hl=ko&sa=X&ved=0ahUKEwjEqeiLu6KDAxXa7WEKHYi0CCYQPAgJ
+</body>
+</html>

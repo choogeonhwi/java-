@@ -1,0 +1,6 @@
+package com.lgy.spring7_1;
+
+public class student {
+	private String name;
+	private int age;
+}

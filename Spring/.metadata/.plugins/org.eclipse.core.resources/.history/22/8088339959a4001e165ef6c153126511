@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+ 프로퍼티를 가져옴
+이름: ${m2.name } <br>
+아이디: ${m2.id } <br>
+비번: ${m2.pw } <br>
+메일: ${m2.email } <br>
+</body>
+</html>

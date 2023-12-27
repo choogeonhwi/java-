@@ -1,0 +1,17 @@
+package Q101;
+
+public class Car {
+	private String company;
+	private String product;
+	private int capRank;
+
+	
+	public void getCarInfo() {
+		System.out.println("이름 : "+getName());
+		System.out.println("나이 : "+getAge());
+		System.out.println("학년 : "+getGradeNum());
+		System.out.println("반 : "+getClassNum());
+	}
+	
+	
+}

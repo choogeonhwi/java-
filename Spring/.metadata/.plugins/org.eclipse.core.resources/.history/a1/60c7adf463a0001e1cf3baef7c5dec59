@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+
+<bean id="logAop" class="com.lgy.spring_9_1.LogAop">
+
+
+<!-- 	aop설정 -->
+	<aop:config>
+	
+<!--  id	참조 변수로 공통기능 조인 -->
+<aop:aspect id="logger" ref="logAop">
+
+<!-- 공통기능을 적용하는 부분 *는 모든 클래스와 메소드 -->
+<aop:pointcut expression="within(com.lgy.spring_9_1.*)" id="publicM"/>
+<!--  advice -->
+<!-- 핵심기능 메소드 실행 전 후 및 예외처리 발생시 loggerAop 실행 -->
+<aop:around method="loggerAop" pointcut-ref="publicM"/>
+
+</aop:aspect>
+
+	</aop:config>
+	</bean>
+	
+	
+<!-- 	<bean id= "student" class="com.lgy.spring_9_1.Student"> -->
+<!-- 	<property name="name" value="홍길동"></property> -->
+<!-- 	<property name="age" value="10"></property> -->
+<!-- 	<property name="gradeNum" value="3"></property> -->
+<!-- 	<property name="classNum" value="5></property> -->
+<!-- 	</bean> -->
+	
+	<bean id= "worker" class="com.lgy.spring_9_1.Worker">
+	<property name="name" value="홍길순"></property>
+	<property name="age" value="35"></property>
+	<property name="job" value="개발"></property>
+	
+	</bean>
+	
+	
+
+
+	
+	
+
+</bean>
+
+</beans>

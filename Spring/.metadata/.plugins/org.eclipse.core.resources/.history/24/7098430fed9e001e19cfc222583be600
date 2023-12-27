@@ -1,0 +1,53 @@
+package spring_8_2_2;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+@Configuration
+public class ApplicationConfig {
+	
+	//2번
+	@Value("${admin.id}")
+	private String adminId;
+	
+	@Value("${admin.pw}")
+	private String adminPw;
+
+	@Value("${sub_admin.id}")
+	private String sub_adminId;
+	
+	@Value("${sub_admin.pw}")
+	private String sub_adminPw;
+	
+	
+	@Bean //1번
+	public static PropertySourcesPlaceholderConfigurer properties() {
+		PropertySourcesPlaceholderConfigurer c =new PropertySourcesPlaceholderConfigurer();
+	 Resource[] loc	= new Resource[2];
+	 //클래스로 외부파일 설정
+	 loc[0]=new ClassPathResource("admin2.properties");
+	 loc[1]=new ClassPathResource("sub_admin2.properties");
+	 
+	 //메소드 매개변수값으로 리소스 인터페이스에 있는 외부파일 정보 사용
+	 c.setLocations(loc);
+	 
+	 return c;
+	}
+	
+	
+	//3번
+	public adminConnection adminConnection() {
+		adminConnection a = new adminConnection();
+		a.setA1(adminId);
+		a.setA2(adminPw);
+		a.setSub_a1(sub_adminId);
+		a.setSub_a2(sub_adminPw);
+		
+		return a;
+		
+	}
+}

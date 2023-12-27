@@ -1,0 +1,31 @@
+package com.lgy.spring_6_3;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class Main {
+	public static void main(String[] args) {
+//		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+		//클래스로 자바 스프링 설정파일 정보 가져옴
+		
+		AbstractApplicationContext ctx=new GenericXmlApplicationContext("classpath:applicationCTX.xml");
+		
+		Student s1= ctx.getBean("student1", Student.class); // 메소드 명이 참조변수
+		System.out.println("이름 :"+ s1.getName());
+		System.out.println("나이 :"+ s1.getAge());
+		System.out.println("취미 :"+ s1.getHobbys());
+		System.out.println("신장 :"+ s1.getHeight());
+		System.out.println("몸무게 :"+ s1.getWeight());
+		
+		
+//		Student s2= ctx.getBean("student2", Student.class);
+//		System.out.println("이름 :"+ s2.getName());
+//		System.out.println("나이 :"+ s2.getAge());
+//		System.out.println("취미 :"+ s2.getHobbys());
+//		System.out.println("신장 :"+ s2.getHeight());
+//		System.out.println("몸무게 :"+ s2.getWeight());
+		
+	}
+}

@@ -1,0 +1,40 @@
+package com.lgy.Q6_1;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+
+public class MainEmployee {
+	public static void main(String[] args) {
+		String configLoc = "classpath:employeeCTX.xml";
+		String configLoc2 = "classpath:employeeCTX2.xml";
+				AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLoc,configLoc2);
+				
+				// getBean 메소드로 객체정보 가져옴
+				Employee e1= ctx.getBean("E",Employee.class);
+				
+				System.out.println(e1.getN());
+				System.out.println(e1.getP());
+				
+				com.lgy.spring_6_1.StudentInfo my= ctx.getBean("studentInfo1",com.lgy.spring_6_1.StudentInfo.class);
+				Student s2 = my.getStudent();
+				
+			
+				System.out.println(s2.getName());
+				System.out.println(s2.getHobbys());
+				
+				Employee e2= ctx.getBean("E",Employee.class);
+				System.out.println(e2.getN());
+				System.out.println(e2.getP());
+				
+				
+				Family f= ctx.getBean("family",Family.class);
+				System.out.println(f.getPapaName());
+				System.out.println(f.getMamiName());
+				System.out.println(f.getSisterName());
+				System.out.println(f.getBortherName());
+				
+				ctx.close();
+			}
+}

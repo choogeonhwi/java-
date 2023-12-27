@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+
+      //상위 요소 삭제 (h1)
+          $("strong").unwrap();
+
+          //각각 묶음
+          $(".ct1").wrap("<div/>");
+
+          //전체 묶음
+          $(".ct2").wrapAll("<div/>");
+
+          //요소와 내용을 묶음
+          $("li").wrapInner("<h3/>")
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+  <h1>
+<strong> 객체 조작 및 생성</strong>
+
+  </h1>
+<p class="ct1">1</p>
+<p class="ct1">2</p>
+<p class="ct2">3</p>
+<p class="ct2">4</p>
+<ul>
+<li>5</li>
+<li>6</li>
+
+</ul>
+
+
+</body>
+</html>

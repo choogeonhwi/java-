@@ -1,0 +1,29 @@
+package com.lgy.spring_6_1;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+public class Main {
+	public static void main(String[] args) {
+String configLoc = "classpath:applicationCTX3.xml";
+		
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLoc);
+		
+		// getBean 메소드로 객체정보 가져옴
+		com.lgy.spring_6_1.Student s1= ctx.getBean("student1",com.lgy.spring_6_1.Student.class);
+		
+		System.out.println(s1.getName());
+		System.out.println(s1.getHobbys());
+		
+		com.lgy.spring_6_1.StudentInfo my= ctx.getBean("studentInfo1",com.lgy.spring_6_1.StudentInfo.class);
+		Student s2 = my.getStudent();
+		
+		if (s1.equals(s2)) {
+			System.out.println("s1 == s2");
+		}
+		else {
+			System.out.println("s1 !=s2");
+		}
+	}
+}

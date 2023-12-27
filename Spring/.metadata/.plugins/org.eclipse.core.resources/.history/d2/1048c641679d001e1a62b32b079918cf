@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="ei" class="com.lgy.Q6_1.Employee">
+	<constructor-arg value="이찬원"></constructor-arg>
+	
+	<constructor-arg>
+	<property name="p" value="200"></property>
+	<property name="j" value="정보처리산업기사"></property>
+		</constructor-arg>
+	</bean>
+</beans>

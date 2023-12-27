@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+        $(".w1 p:first").text("내용1") //첫 p태그 변경
+        
+        $(".w1 p:active").removeClass("active").addClass("on")
+        
+        //링크 주소 부여
+        $(".w1 p:eq(2) a").attr("href","http://www.naver.com")
+        
+
+        //태그 값 변경
+        $(".w1 p:eq(3) input").val("ko")
+
+
+        $(".w2 p:first").after("<p>after(add1)</p>")
+
+
+        
+        $(".w2 p:first").before("<p>before(add2)</p>")
+
+
+        //부모 요소 삭제
+        // $(".w3 p").unwrap();
+        
+
+        //내용 태그적용
+        $(".w3 p").unwrap().wrapInner("<strong/>");
+      });
+    </script>
+    </script>
+
+</head>
+<body>
+
+
+<div class="w1">
+
+<p>1</p>
+<p class="active">2</p>
+<p><a href="#">naver</a></p>
+<p>
+<input type="text" value="hello">
+
+</p>
+</div>
+
+<div class="w2">
+
+
+  <p>5</p>
+  <p>6</p>
+
+
+</div>
+<div class="w3">
+
+
+  <p>7</p>
+  <p>8</p>
+
+
+</div>
+
+
+</body>
+</html>

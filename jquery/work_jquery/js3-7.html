@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js">
+    </script>
+
+    <style>
+    *{margin: 0; padding: 0;}
+    #box_w{
+      width: 300px;
+      height: 200px;
+      margin: 50px auto 0;
+      background-color:  #ccc;
+      position: relative;
+    }
+
+    .box{
+      width: 50px;
+      height: 50px;
+      left: 100px;
+
+      top: 50px;
+      background-color: #f00;
+      position: absolute;
+
+    }
+    </style>
+    
+      
+      <script>
+        $(function () {
+          var $t1 =$(".t1 span" )
+          var $t2 =$(".t2 span" )
+          var $box =$(".box" )
+
+
+          //TOP 
+          var p_t= $box.position(),top;
+
+          //MARGIN+ CLASS TOP
+          var off_t= $box.offset(),top;
+
+          $t1.text(p_t);
+          $t2.text(off_t);
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="box_w">
+<p class="box">박스</p>
+</div>
+<p class="t1">상대 탑 위치값 :<span></span></p>
+<p class="t2">절대 탑 위치값 :<span></span></p>
+
+</body>
+</html>

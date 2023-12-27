@@ -1,0 +1,18 @@
+package spring7_2;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class main {
+	public static void main(String[] args) {
+    GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+    
+    //스프링 설정
+    ctx.load("classpath:appCTX2.xml");
+    //새로고침 (설정반영) ,객체 출력에는 영향 없음
+    ctx.refresh();
+
+    
+    
+    ctx.close();
+	}
+}

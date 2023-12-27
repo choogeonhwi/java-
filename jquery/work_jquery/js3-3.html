@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.aqua{background-color:  #0ff;}
+.red{background-color:  red;}
+.green{background-color:  green;}
+.yellow{background-color:  yellow;}
+
+</style>
+
+    <script src="js/jquery.js">
+    </script>
+    
+      
+      <script>
+        $(function () {
+         $("#p1").addClass("aqua")
+          
+         $("#p2").removeClass("red");
+         $("#p3").toggleClass("green");
+         $("#p4").toggleClass("yellow");
+         $("#p6").toggleClass("green");
+         $("#p6").text($("#p5").hasClass("yellow"));
+
+        });
+    </script>
+</head>
+<body>
+    <p id="p1">1</p>
+    <p id="p2" class="red">2</p>
+    <p id="p3" >3</p>
+    <p id="p4" class="green">4</p>
+    <p id="p5" class="yellow">5</p>
+    <p id="p6">6</p>
+
+</body>
+</html>

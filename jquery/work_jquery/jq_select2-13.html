@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js">
+      </script>
+
+      <script>
+        $(function () {
+       $("#in1 p:contains(내용1)").css({"background-color":"#ff0"});
+
+    //    $("#in1 p:contains(strong)").css({"background-color":"#0ff"}); //strong 포함하는 요소
+
+       $("#in1 p:has(strong)").css({"background-color":"#0ff"});
+
+    //    $("#in1 p:has(내용1)").css //내용1 요소를 못찾({"background-color":"#0ff"});
+
+       $("#outer_wrap").contents().css({"border":"1px dashed #00f"}); //자식 요소만
+
+       $("#in2 p").not(":first").css({"background-color":"#0f0"});
+
+       $("#in2 p").css({"color":"#f00"});
+
+       $("#in2 p").eq(2).end().css({"color":"#f00"}); //인덱스 2 + 필터링 취소 
+    });
+        
+      </script>
+</head>
+<body>
+    <div id="outer_wrap">
+<h1>콘텐츠 탐색 선택자</h1>
+        <section id="in1">
+<h1>contains(),contents(),has()</h1>
+<p><span>내용1</span></p>
+<p><strong>내용2</strong></p>
+<p><span>내용3</span></p>
+        </section>
+        <section id="in2">
+<h1>not(),end()</h1>
+<p>내용4</p>
+<p>내용5</p>
+<p>내용6</p>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+이름: ${studentInfomation.name }<input type="text" name="name">
+나이: ${studentInfomation.age } <input type="text" name="age">
+학년:  ${studentInfomation.grade}<input type="text" name="grade">
+반: ${studentInfomation.classn } <input type="text" name="claasn">
+</body>
+</html>

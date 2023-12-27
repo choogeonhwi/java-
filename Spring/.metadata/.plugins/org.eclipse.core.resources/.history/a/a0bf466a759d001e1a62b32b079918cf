@@ -1,0 +1,35 @@
+package Q6_3;
+
+import java.util.ArrayList;
+
+public class Singer {
+	private String n;
+	private int a;
+	private ArrayList<String> c;
+	public String getN() {
+		return n;
+	}
+	public void setN(String n) {
+		this.n = n;
+	}
+	public int getA() {
+		return a;
+	}
+	public void setA(int a) {
+		this.a = a;
+	}
+	public Singer(String n) {
+		this.n = n;
+	}
+	public ArrayList<String> getC() {
+		return c;
+	}
+	public void setC(ArrayList<String> c) {
+		this.c = c;
+	}
+	
+	
+	
+
+	
+}

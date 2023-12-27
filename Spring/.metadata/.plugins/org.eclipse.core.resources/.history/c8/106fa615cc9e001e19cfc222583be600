@@ -1,0 +1,36 @@
+package com.lgy.spring_6_5;
+
+import java.util.ArrayList;
+
+public class Nasdaq {
+	private int a;
+	private int r;
+	private ArrayList<String> s;
+	
+	
+	
+	public Nasdaq(int a) {
+		this.a = a;
+	}
+	
+	
+	public int getA() {
+		return a;
+	}
+	public void setA(int a) {
+		this.a = a;
+	}
+	public int getR() {
+		return r;
+	}
+	public void setR(int r) {
+		this.r = r;
+	}
+	public ArrayList<String> getS() {
+		return s;
+	}
+	public void setS(ArrayList<String> s) {
+		this.s = s;
+	}
+	
+}

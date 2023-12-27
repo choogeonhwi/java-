@@ -1,0 +1,28 @@
+package spring_ex12_4;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class spring_ex12_4 {
+	@RequestMapping("bbb/airbnb")
+	public String view(Model model) {
+		model.addAttribute("id", "숙소예약");
+		
+		return "bbb/airbnb";
+	}
+	
+	@RequestMapping("bbb/universityManager")
+	public String view2(Model model2) {
+		model2.addAttribute("id2", "학사관리");
+		return "bbb/universityManager";
+	}
+	
+	@RequestMapping("bbb/bookManager")
+	public String view3(Model model3) {
+		model3.addAttribute("id3", "도서관리");
+		return "bbb/bookManager";
+	}
+	
+}

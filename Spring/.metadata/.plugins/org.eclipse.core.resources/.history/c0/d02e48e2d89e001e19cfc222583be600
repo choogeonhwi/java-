@@ -1,0 +1,24 @@
+package spring7_3;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class main {
+	public static void main(String[] args) {
+    GenericXmlApplicationContext ctx 
+    = new GenericXmlApplicationContext("classpath:appCTX3.xml");
+    
+    student s1 = ctx.getBean("student1", student.class);
+    
+    System.out.println("이름 :"+s1.getName());
+    System.out.println("나이 :"+s1.getAge());
+    System.out.println("===================");
+    
+    
+    student s2 = ctx.getBean("student1", student.class);
+    s2.setName("홍길자");
+    System.out.println("이름 :"+s2.getName());
+    System.out.println("나이 :"+s2.getAge());
+    System.out.println("===================");
+    ctx.close();
+	}
+}

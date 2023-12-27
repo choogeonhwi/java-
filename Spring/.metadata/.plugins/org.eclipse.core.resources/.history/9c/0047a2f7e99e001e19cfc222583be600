@@ -1,0 +1,52 @@
+package spring_8_2;
+
+
+
+
+
+public class adminConnection {
+
+	private String a1;
+	private String a2;
+	private String sub_a1;
+	private String sub_a2;
+	
+	
+	
+	
+
+
+	public String getSub_a1() {
+		return sub_a1;
+	}
+
+	public void setSub_a1(String sub_a1) {
+		this.sub_a1 = sub_a1;
+	}
+
+	public String getSub_a2() {
+		return sub_a2;
+	}
+
+	public void setSub_a2(String sub_a2) {
+		this.sub_a2 = sub_a2;
+	}
+
+	public String getA1() {
+		return a1;
+	}
+
+	public void setA1(String a1) {
+		this.a1 = a1;
+	}
+
+	public String getA2() {
+		return a2;
+	}
+
+	public void setA2(String a2) {
+		this.a2 = a2;
+	}
+
+	
+}

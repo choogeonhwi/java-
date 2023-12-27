@@ -1,0 +1,14 @@
+package com.lgy.spring_8_1;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.core.env.MutablePropertySources;
+
+public class Main {
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx = new GenericApplicationContext();
+		ConfigurableEnvironment env = ctx.getEnvironment();
+		MutablePropertySources ps = env.getPropertySources();
+	}
+}

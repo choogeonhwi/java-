@@ -1,0 +1,13 @@
+package com.lgy.spring7_1;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class main {
+	public static void main(String[] args) {
+    GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
+    ctx.load("classpath:appCTX.xml");
+    
+    ctx.refresh();
+    
+	}
+}

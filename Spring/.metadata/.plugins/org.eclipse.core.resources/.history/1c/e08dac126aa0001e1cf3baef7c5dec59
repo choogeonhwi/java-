@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+
+<bean id="logAop" class="Q91.LogAop"></bean>
+
+
+<!-- 	aop설정 -->
+<aop:config>
+<!--  id	참조 변수로 공통기능 조인 -->
+<aop:aspect id="logAop" ref="logAop">
+<!-- 공통기능을 적용하는 부분 *는 모든 클래스와 메소드 -->
+<aop:pointcut expression="within(Q91.*)" id="publicM"/>
+<!--  advice -->
+<!-- 핵심기능 메소드 실행 전 후 및 예외처리 발생시 loggerAop 실행 -->
+<aop:around method="LoggerAop" pointcut-ref="publicM"/>
+</aop:aspect>
+	</aop:config>
+	
+	
+	
+	
+	<bean id= "professor" class="Q91.Professor">
+	<property name="name" value="김교수"></property>
+	<property name="age" value="33"></property>
+	<property name="sub" value="스프링"></property>
+	
+	</bean> 
+	
+	<bean id= "singer" class="Q91.Singer">
+	<property name="name" value="방탄소년단"></property>
+	<property name="member" value="7"></property>
+	<property name="song" value="다이너마이트"></property>
+	
+	</bean>
+
+</beans>

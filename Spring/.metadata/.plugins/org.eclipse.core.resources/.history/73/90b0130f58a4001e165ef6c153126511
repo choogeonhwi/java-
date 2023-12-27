@@ -1,0 +1,8 @@
+package com.lgy.spring13_3;
+
+public class Member {
+	private String name;
+	private String id;
+	private String pw;
+	private String email;
+}

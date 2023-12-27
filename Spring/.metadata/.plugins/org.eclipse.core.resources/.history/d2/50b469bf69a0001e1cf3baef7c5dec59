@@ -1,0 +1,20 @@
+package com.lgy.spring_9_1;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import Q91.Singer;
+
+public class Main {	
+		public static void main(String[] args) {
+			AbstractApplicationContext ctx = new GenericXmlApplicationContext("classpath:appCTX.xml");
+			Professor p = ctx.getBean("professor", Professor.class);
+			p.getProfessorInfo();
+			
+			Singer s = ctx.getBean("singer", Singer.class);
+			
+			s.getSingerInfo();
+			
+			
+		}
+}

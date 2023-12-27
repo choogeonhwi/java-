@@ -1,0 +1,23 @@
+package com.lgy.spring_6_1;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import com.lgy.spring_5_1.Student;
+import com.lgy.spring_5_1.StudentInfo;
+
+public class Main {
+	public static void main(String[] args) {
+String configLoc = "classpath:applicationCTX3.xml";
+		
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLoc);
+		
+		// getBean 메소드로 객체정보 가져옴
+		Student my= ctx.getBean("student1",Student.class);
+		
+		System.out.println(my.getName());
+		System.out.println(my.getHobbys());
+		
+	
+	}
+}

@@ -1,0 +1,39 @@
+package Q6_2;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+
+
+public class MainProfessor {
+	public static void main(String[] args) {
+		String configLoc = "classpath:professorCTX.xml";
+		String configLoc2 = "classpath:professorCTX2.xml";
+				AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLoc,configLoc2);
+				
+				// getBean 메소드로 객체정보 가져옴
+				Professor p= ctx.getBean("p2",Professor.class);
+				
+				System.out.println(p.getN());
+				System.out.println(p.getA());
+				System.out.println(p.getC());
+				System.out.println("==============");
+				
+				ProfessorInfo my= ctx.getBean("pi",ProfessorInfo.class);
+				Professor pi = my.getProfessor();
+				
+			
+				System.out.println(pi.getN());
+				System.out.println(pi.getA());
+				System.out.println(pi.getC());
+				System.out.println("==============");
+				
+				Professor p2= ctx.getBean("p",Professor.class);
+				System.out.println(p2.getN());
+				System.out.println(p2.getA());
+				System.out.println(p2.getC());
+		
+			
+				ctx.close();
+			}
+}

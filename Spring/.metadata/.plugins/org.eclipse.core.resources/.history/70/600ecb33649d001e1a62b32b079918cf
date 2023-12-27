@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="E" class="com.lgy.Q6_1">
+	<constructor-arg value="임영웅"></constructor-arg>
+	<constructor-arg value="300"></constructor-arg>
+	<constructor-arg>
+	<list>
+		<value> 정보처리기사</value>
+		<value> SQLD</value>
+	
+	</list>
+	</constructor-arg>
+	
+	<property name="height" value="190"></property>
+	<property name="weight" value="70"></property>
+	
+	</bean>
+</beans>

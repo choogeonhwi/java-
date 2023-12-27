@@ -1,0 +1,20 @@
+package Q6_2;
+
+
+
+public class ProfessorInfo {
+	
+private Professor employee;
+
+public Professor getEmployee() {
+	return employee;
+}
+
+public void setEmployee(Professor employee) {
+	this.employee = employee;
+}
+
+	
+		}
+
+

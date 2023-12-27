@@ -1,0 +1,31 @@
+package com.lgy.Q6_1;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+
+@Configuration
+
+public class EmplyeeInfo {
+	
+
+			
+			@Bean
+			public Employee student1() {
+				ArrayList<String> hobbys=new ArrayList<String>();
+				hobbys.add("수영");
+				hobbys.add("요리");
+				
+				Employee E = new Employee("임영웅", 20, hobbys);
+				E.setHeight(180);
+				E.setWeight(80);
+				
+				return E;
+			}
+			
+			
+		}
+
+

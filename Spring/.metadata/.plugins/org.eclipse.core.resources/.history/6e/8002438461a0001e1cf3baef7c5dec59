@@ -1,0 +1,14 @@
+package com.lgy.spring_9_1;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+//공통 기능
+public class LogAop {
+//	loggerAop: advice
+	public Object LoggerAop(ProceedingJoinPoint joinPoint) {
+		String sig = joinPoint.getSignature().toShortString();// 핵심기능 정보 가져옴
+		System.out.println(sig + "is start."); // 핵심기능 시작부분
+		System.out.println();
+	}
+
+}
