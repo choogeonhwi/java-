@@ -1,0 +1,23 @@
+package com.lgy.test;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+
+public class test {
+	public static void main(String[] args) {
+		try {
+			// html객체
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			// xml 해석 객체
+			DocumentBuilder parser = dbf.newDocumentBuilder();
+			
+			Document xmlDoc=null;
+			String url="xml\\"; //xml 파일 경로
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

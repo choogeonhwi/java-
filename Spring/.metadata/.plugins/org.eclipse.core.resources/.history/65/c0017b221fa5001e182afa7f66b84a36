@@ -1,0 +1,17 @@
+package com.lgy.test;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+public class test {
+	public static void main(String[] args) {
+		try {
+			// html객체
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			// xml 해석 객체
+			DocumentBuilder parser = dbf.newDocumentBuilder();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
