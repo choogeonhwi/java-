@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+        p{width: 110px;
+        text-align: center;
+        }
+        .t1{
+           background-color: aqua; 
+        }
+        .t2{
+           background-color: pink; 
+        }
+        .t3{
+           background-color: orange; 
+        }
+        .t4{
+           background-color: green; 
+        }
+        .t5{
+           background-color: gold; 
+        }
+  
+    </style>
+
+
+    <script>
+        $(function () {
+            $(".t1").animate({marginLeft:"300px"},1000)
+            $(".t2").delay(3000).animate({marginLeft:"300px"},1000)
+      
+
+        $(".b1").on("click",moveE)
+
+        function moveE(){
+            $(".t3").animate({marginLeft:"+=50px"},800);
+            $(".t4").animate({marginLeft:"+=50px"},800);
+            $(".t4").stop();
+            $(".t5").animate({marginLeft:"+=50px"},800);
+            $(".t5").stop(true,true);
+        }
+    });
+    </script>
+  
+
+</head>
+<body>
+<p class="t1">효과1</p>
+<p class="t2">효과2 <br> delay(3000) </p> 
+<p > <button class="b1"> 50px 전진 </button></p> 
+<p class="t3">효과3</p>
+<p class="t4">효과4 <br> stop() </p>
+<p class="t5">효과5 <br> stop(true,true) </p>
+</body>
+</html>

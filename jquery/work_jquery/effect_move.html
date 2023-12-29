@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            padding: 20px;
+
+        }
+
+        .bw {
+            margin-bottom: 10px;
+
+        }
+
+        .wr {
+            max-width: 600px;
+            border: 1px solid #000;
+        }
+    </style>
+
+
+    <script>
+        $(function () {
+            var t1 = $(".t1")
+            var c = 1;
+
+            $(".bw button").on("click", function () {
+                if (!t1.is(":animated")) {
+
+
+                    if ($(this).hasClass("back")) {
+                        count--;
+                        if (count < 1) {
+                            count = 1;
+                            return;
+                        }
+                        t1.animate({ marginLeft: "-=10%" });
+
+                    } else {
+
+                        count++;
+                        if (count > 10) {
+                            count = 10;
+                            return;
+                        }
+                        t1.animate({ marginLeft: "+=10%" });
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+    <p class="bw">
+        <button class="back">back</button>
+        <button class="gb">gb</button>
+    </p>
+
+    <div class="wr">
+        <p class="t1">내용1</p>
+    </div>
+
+    
+</body>
+</html>

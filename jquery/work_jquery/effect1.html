@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+        .content {
+            width: 400px;
+            background-color: #eee;
+
+        }
+    </style>
+
+
+    <script>
+        $(function () {
+            $(".b2").hide(); //공간도 삭제
+            $(".b1").on("click", function () {
+                //콜백(실행  후 호출)
+                //1초동안 위로 일정한 속도로 접힘
+                $(".box").slideUp(1000, "linear", function () {
+                    alert("box run~!")
+                    $(".b1").hide();
+                    $(".b2").show();
+
+                })
+
+            })
+            $(".b2").on("click", function () {
+
+                $(".box").slideUp(1000, "swing", function () {
+                    alert("box run~!")
+                    $(".b2").hide();
+                    $(".b1").show();
+
+                })
+
+            })
+            $(".b3").on("click", function () {
+
+                $(".box").slideToggle(1000, "s   wing");
+
+
+
+
+            });
+            $(".b4").on("click", function () {
+
+                $(".box").fadeTo("fast", 0.3);
+
+
+
+
+            });
+            $(".b5").on("click", function () {
+
+                $(".box").slideToggle("fast", 1);
+
+
+
+
+            });
+        });
+    </script>
+    </script>
+
+</head>
+
+<body>
+    <p>
+        <button class="b1">slideUp</button>
+        <button class="b2">fadeln</button>
+
+
+    </p>
+    <p>
+        <button class="b3">toggleSlide</button>
+
+
+    </p>
+    <p>
+        <button class="b4">fadeTo(0.3)</button>
+        <button class="b5">fadeTo(1)</button>
+
+
+    </p>
+    <div class="box">
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam temporibus placeat ipsa cupiditate sunt
+            magni ipsam in consectetur possimus, iusto vel! Velit, sed. Accusamus voluptates, laborum aliquid recusandae
+            iure quae?
+
+        </div>
+
+    </div>
+</body>
+
+</html>

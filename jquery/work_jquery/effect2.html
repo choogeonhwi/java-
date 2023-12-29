@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+    .t1{background-color: aqua;}
+    .t2{background-color: pink;}
+  
+    </style>
+
+
+    <script>
+        $(function () {
+            $(".b1").on("click", function(){
+                $(".t1").animate({marginLeft:"500px", fontSize:"30px"},2000,"linear",function(){
+                    alert("모션 완료")
+                })
+            })
+            $(".b2").on("click", function(){
+                $(".t2").animate({marginLeft:"+=50px", fontSize:"30px"},1000);
+            })
+        });
+    </script>
+    </script>
+
+</head>
+
+<body>
+    <p>
+<button class="b1">버튼1</button>
+</p>
+<span class="t1">500px 이동</span>
+<p>
+<button class="b2">버튼1</button>
+</p>
+<span class="t2">500px 이동</span>
+
+</body>
+</body>
+
+</html>

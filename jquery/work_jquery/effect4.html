@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+    *{margin: 0;}
+        .t1,t2{
+            width: 50px;
+            text-align: center;
+            background-color: aqua;
+
+        }
+ 
+        
+    </style>
+        
+
+    <script>
+        $(function () {
+
+            //큐(선입선출)에 저장된 순서대로 실행 
+           $(".t1").animate({marginLeft:"200px"},1000)
+                       .animate({marginTop:"200px"},1000)   
+                       .queue(function(){
+                        // alert.("queue run")
+                            $(this).css({"background":"red"})
+                           
+                       }) 
+                        .animate({marginLeft:"0px"},1000)   
+                      .animate({marginTop:"0px"},1000)
+    });
+    </script>
+  
+
+</head>
+<body>
+     <p class="t1">내용1</p>
+     <p class="t2">내용1</p>
+</body>
+</html>
