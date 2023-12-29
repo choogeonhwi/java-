@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+        $(".btn1").click(function(){
+        //   alert("클릭1");  
+        // $(".btn1").css({"color":"#f00"})
+
+                // parent = 상위요소 , next= 다음요소
+        $(".btn1").parent().next().css({"color":"#f00"})
+    });
+    
+    $(".btn2").on({
+        // "mouseover":function(){
+            //     alert("over");
+            // }
+            
+            //focus = 탭키 인식
+            "mouseover focus":function(){
+                // alert("over");
+                $(".btn2").parent().next().css({"color":"#0f0"})
+            },
+            // blur = 탭키를 벗어나면 이벤트 발생, 마우스는 바로 발생
+            "mouseover blur":function(){
+                // alert("out");
+                $(".btn2").parent().next().css({"color":"#000"})
+            }
+        });
+        
+      
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+
+<p>
+
+    <button class="btn1">버튼1</button>
+
+</p>
+<p>내용1</p>
+<p>
+
+    <button class="btn2">버튼2</button>
+
+</p>
+<p>내용2</p>
+
+</body>
+</html>

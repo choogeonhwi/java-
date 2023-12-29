@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+        //요소를 벗어나는 순간 이벤트 발생
+            $("#box_1").on("mouseout",function(){
+                $("#box_1").css({"background-color": "yellow"})
+            });
+
+            // 영역을 벗어나면 이벤트 발생
+            $("#box_2").on("mouseleave",function(){
+                $("#box_2").css({"background-color": "pink"})
+            });
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+<h1>mouseout</h1>
+<div id="box_1">
+    <p> <a href="#">1</a></p>
+    <p> <a href="#">2</a></p>
+    <p> <a href="#">3</a></p>
+</div>
+<h1>mouseleave</h1>
+<div id="box_2">
+    <p> <a href="#">4</a></p>
+    <p> <a href="#">5</a></p>
+    <p> <a href="#">6</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () { 
+        // // 이벤트 발생
+            $("#id1, #pw1").on("focus",function(){
+            //         //this로 마우스나 탭키 스타일 적용
+            //         $(this).css({"background-color":"pink"})
+            //     });
+            // $("#f1").on("focus",function(){
+                //this로 마우스나 탭키 스타일 적용
+                $(this).css({"background-color":"pink"})
+            });
+                $("#id1, #pw1").on("blur",function(){
+            // $("#f1").on("blur",function(){
+                //this로 마우스나 탭키 스타일 적용
+                $(this).css({"background-color":"#fff"})
+            });
+
+
+            // 하위요소 선택시 이벤트 발생
+                // $("#id2, #pw2").on("focusin",function(){
+            $("#f2").on("focusin",function(){
+                //this로 마우스나 탭키 스타일 적용
+                $(this).css({"background-color":"#pink"})
+            });
+                // $("#id2, #pw2").on("focusout",function(){
+            $("#f2").on("focusout",function(){
+                //this로 마우스나 탭키 스타일 적용
+                $(this).css({"background-color":"#fff"})
+            });
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+<h1>focus / blur</h1>
+<form action="#" id="f1">
+<p>
+<label for="id1">id</label>
+<input type="text" name="id1" id="id1">
+</p>
+<p>
+<label for="pw1">pw</label>
+<input type="password" name="pw1" id="pw1">
+</p>
+
+</form>
+
+<h1>focusin / focusout</h1>
+<form action="#" id="f2">
+<p>
+<label for="id2">id2</label>
+<input type="text" name="id2" id="id2">
+</p>
+<p>
+<label for="pw2">pw2</label>
+<input type="password" name="pw2" id="pw2">
+</p>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+
+            $(document).on("keydown",keyE) //한영키는 제외
+               
+            
+
+            function keyE(e){
+                // alert("777");
+                // alert(e.keyCode); //키에 부여된 코드 출력
+                var d="";
+                switch(e.keyCode){
+                    case 37 : d = "LEFT"; break;
+                    case 38 : d = "R"; break;
+                    case 39 : d = "U"; break;
+                    case 40 : d = "D"; break;
+                }
+                if(d){
+
+                    $("#id").val(d);
+                }
+          }
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+    <p>
+<input type="text" name="id" id="id">
+
+    </p>
+
+</body>
+</html>

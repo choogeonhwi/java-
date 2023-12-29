@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+        //마우스 이동시 이벤트
+            $(document).on("mousemove",function(e){
+                $(".px").text(e.pageX);
+                $(".py").text(e.pageY);
+            });
+
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+<h1>mousemove</h1>
+<p>
+    x : <span class="px">0</span>
+    px
+</p>
+<p>
+    y : <span class="py">0</span>
+    px
+</p>
+</body>
+</html>

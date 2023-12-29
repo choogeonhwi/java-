@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+
+    <style>
+      
+    </style>
+    
+      
+      <script>
+    $(function () {
+
+        //ready = 객체가(body.p) 로딩이 끝나면 실행
+        $(document).ready(function(){
+            // 이미지 놀이를 변수에 대입
+            var h1 = $(".img1").height();
+            console.log("ready : ", h1);
+        })
+        // 외부연동소스(iframe, img, video)로딩 종료시 실행
+        $(window).on("load",function(){
+            var h2 = $(".img1").height();
+            console.log("load : ", h2);
+        });
+        $(document).ready(function(){
+            // 이미지 놀이를 변수에 대입
+            var h3 = $(".img1").height();
+            console.log("ready2 : ", h3);
+        })
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+
+<p>
+<img src="http://place-hold.it/300x300" class="img1">
+
+</p>
+</body>
+</html>
