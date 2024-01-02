@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F57CE200-9A53-26A1-B998-A667FFFD39F9" name="보관함">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:44:03 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="도서_도선번호" id="7D7B7BAD-2CD1-35CD-3078-0938BCFE289E">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:44:27 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96CF00EA-B21B-777D-9EFE-015E1B1DDAB3" referredColumn="74F07781-E77C-B645-0579-6407B1CD3AE0"/>
+</associations>
+</Column>
+<Column name="회원_회원번호" id="2AF80CBC-337B-CE60-2739-D7898609A544">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:44:31 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1631E3F-2A28-6249-BB56-9FCAA42F9086" referredColumn="05B1F9D9-D2C5-4626-BEE3-CF5B5AD21199"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7EEF3FD-6F83-E83D-A5C2-3A6F27C2D3E3" name="보관함_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:46:34 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D7B7BAD-2CD1-35CD-3078-0938BCFE289E"/>
+<colUsage columnID="2AF80CBC-337B-CE60-2739-D7898609A544"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="529B51EA-078F-99B4-8958-F113E3EBCCAE" name="보관함_도서_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:44:27 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D7B7BAD-2CD1-35CD-3078-0938BCFE289E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07EF0AE1-5067-BE42-B54D-7187BF24F547" name="보관함_회원_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:44:31 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AF80CBC-337B-CE60-2739-D7898609A544"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

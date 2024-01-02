@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="abc3" id="819E48DB-2172-9708-5CB9-15714E44D85F" version="3.5">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:13:38 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>819E48DB-2172-9708-5CB9-15714E44D85F</designId>
+</OSDM_Design>

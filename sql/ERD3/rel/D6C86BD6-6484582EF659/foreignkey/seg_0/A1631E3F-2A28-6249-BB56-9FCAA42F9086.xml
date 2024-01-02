@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1631E3F-2A28-6249-BB56-9FCAA42F9086" containerWithKeyObject="F57CE200-9A53-26A1-B998-A667FFFD39F9" localFKIndex="07EF0AE1-5067-BE42-B54D-7187BF24F547" name="보관함_회원_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:44:31 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<referredTableLongName>회원</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>350B6D4A-55DA-113A-9877-DE1D71AD809F</referredTableID>
+<keyObject>89C31B53-4FB9-3B2E-5319-18BAEF16A613</keyObject>
+<referredKeyID>89C31B53-4FB9-3B2E-5319-18BAEF16A613</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>회원번호</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

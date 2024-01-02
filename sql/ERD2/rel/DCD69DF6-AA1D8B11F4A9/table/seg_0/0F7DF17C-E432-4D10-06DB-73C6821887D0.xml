@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F7DF17C-E432-4D10-06DB-73C6821887D0" name="고객정보">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:49:24 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="회원번호" id="1B77841A-4153-B819-F32D-85CBB0FC6521">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:49:43 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="주소" id="EA2171D9-EBD0-80A2-18A4-E1017125789F">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:02:12 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F1FA1B3-4EBA-A23F-A0CD-23E1319EA5E0" name="고객정보_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:49:43 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B77841A-4153-B819-F32D-85CBB0FC6521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E1B7304-2A0B-302F-9FF3-E7656948AF5B" name="도서재고">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:42:49 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="도서번호" id="EBED763A-18C5-52E6-48E8-26C051B18ECE">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:43:31 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="도서명" id="598603EB-2F19-62F1-6DF0-639425311F45">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:43:31 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="재고량" id="351B6FB6-445E-3806-6867-FAE5AA8C140A">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:43:31 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28769A90-9203-3B50-596B-FBF682AE6F9C" name="도서재고_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 07:43:31 UTC</createdTime>
+<ownerDesignName>abc2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBED763A-18C5-52E6-48E8-26C051B18ECE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

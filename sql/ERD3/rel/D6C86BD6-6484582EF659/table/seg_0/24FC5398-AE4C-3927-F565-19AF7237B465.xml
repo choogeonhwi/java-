@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24FC5398-AE4C-3927-F565-19AF7237B465" name="도서">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:13:47 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="도선번호" id="74F07781-E77C-B645-0579-6407B1CD3AE0">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:14:07 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="제목" id="AEC549B8-423D-D431-CBEA-F5D0BCF69B99">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:15:19 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="부제" id="A0639A64-5CCD-ED87-4134-726CA013D107">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:16:35 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="저자" id="BF5C9141-FC29-536E-C47E-25CB4AF7795D">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:16:45 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="옮김" id="52A6E3BA-51D7-F210-B922-E7B2BF39B622">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:17:25 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출판사" id="A6EE2540-FDF9-3400-ABE4-D6C9E1596AB4">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:18:07 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="출간일" id="2CC5E538-C0FE-F20F-AB2C-017A7629644E">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:18:47 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="리뷰점수" id="DB5BDB29-FA01-ABEC-6A08-7E5E847F1751">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:19:50 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="정가" id="9D6C0DD3-E775-BB14-F66B-44710C4B9B27">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:20:56 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="할인율" id="5D6AE4FD-61AB-410F-439D-249E4A5A5D3F">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:22:05 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="510A132A-2C3C-63A5-263F-8C5E17861900" name="도서_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:14:07 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74F07781-E77C-B645-0579-6407B1CD3AE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

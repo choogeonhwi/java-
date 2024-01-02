@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="350B6D4A-55DA-113A-9877-DE1D71AD809F" name="회원">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:30:08 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="회원번호" id="05B1F9D9-D2C5-4626-BEE3-CF5B5AD21199">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:31:08 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이름" id="B6A7E0D9-2194-D25B-EA5E-A158B3DC777A">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:31:08 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이메일" id="AD6F1839-67A9-0BF8-EC34-D5EC7B28DFDA">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:31:08 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="연락처" id="55889B46-9205-9FFF-CF06-CCBD7A894ACF">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:31:08 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89C31B53-4FB9-3B2E-5319-18BAEF16A613" name="회원_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2024-01-02 08:31:08 UTC</createdTime>
+<ownerDesignName>abc3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05B1F9D9-D2C5-4626-BEE3-CF5B5AD21199"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
