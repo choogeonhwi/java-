@@ -1,0 +1,6 @@
+127.0.0.1 - - [12/Jan/2024:16:43:25 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [12/Jan/2024:16:43:25 +0900] "GET /spring_mvc_board_mybatis/WEB-INF/classes/com/lgy/spring_mvc_board_mybatis/controller/BController.java HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [12/Jan/2024:16:43:31 +0900] "GET /spring_mvc_board_mybatis/list HTTP/1.1" 200 717
+0:0:0:0:0:0:0:1 - - [12/Jan/2024:16:43:35 +0900] "GET /spring_mvc_board_mybatis/write_view HTTP/1.1" 200 685
+0:0:0:0:0:0:0:1 - - [12/Jan/2024:16:43:37 +0900] "POST /spring_mvc_board_mybatis/write HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Jan/2024:16:43:37 +0900] "GET /spring_mvc_board_mybatis/list HTTP/1.1" 200 941

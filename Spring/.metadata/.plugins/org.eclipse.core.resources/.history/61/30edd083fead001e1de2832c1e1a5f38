@@ -1,0 +1,5 @@
+package com.lgy.spring_mvc_board.command;
+
+public class BContentCommand {
+
+}

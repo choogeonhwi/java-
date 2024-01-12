@@ -1,0 +1,19 @@
+package com.lgy.spring_test_item;
+
+import java.sql.Timestamp;
+
+import com.lgy.spring_test_item.ItemDto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class ItemDto {
+	private int bid;
+	private String bname;
+	private String btitle;
+	private String bcontent;
+	private Timestamp bdate;
+	private int bhit;
+}

@@ -1,0 +1,16 @@
+package com.lgy.spring_test_member_jdbc;
+
+import com.lgy.spring_test_member_jdbc.MemDto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class MemDto {
+	private String name;
+	private int price;
+	private String description;
+}

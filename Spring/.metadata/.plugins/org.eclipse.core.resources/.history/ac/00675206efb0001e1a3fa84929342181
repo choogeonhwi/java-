@@ -1,0 +1,29 @@
+package com.lgy.spring_test_member_jdbc;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.ui.Model;
+
+import com.lgy.spring_test_item_jdbc.dao.ItemDao;
+import com.lgy.spring_test_item_jdbc.dto.ItemDto;
+import com.lgy.spring_test_member_jdbc.MemDao;
+
+public class MemLoginService implements MemService{
+
+	@Override
+	public void execute(Model model) {
+		ItemDao dao=new ItemDao();
+		ArrayList<ItemDto> dtos = dao.contentView();
+		model.addAttribute("content_view", dtos);
+	}
+
+	
+
+}
+
+
+
+

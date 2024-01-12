@@ -1,0 +1,19 @@
+package com.lgy.spring_mvc_board.command;
+
+import java.util.Map;
+
+import org.springframework.ui.Model;
+
+//게시글 저장
+public class BWriteCommand  implements BCommand{
+
+	@Override
+	public void execute(Model model) {
+		//다오에 있는 매개변수 값들이 필요
+		// 모델 객체 꺼내서 전송
+		
+		Map<String, Object> map = model.asMap();
+		map.get("request")
+	}
+	
+}
