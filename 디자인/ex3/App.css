@@ -1,0 +1,51 @@
+/* src/App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+.logo {
+  margin: 20px 0;
+}
+
+.content {
+  width: 80%; /* 좌4:우2 비율 조절 */
+  margin: 20px 0;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board-item {
+  width: 48%; /* 게시판 아이템 너비 조절 */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
