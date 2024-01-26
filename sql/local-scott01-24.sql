@@ -14,9 +14,7 @@ CREATE SEQUENCE BOARD_SEQ
     INSERT INTO BOARD (ID, TITLE, CONTENT, NICKNAME)
 VALUES (BOARD_SEQ.NEXTVAL, '제목', '내용', '닉네임');
 
-select * from board;
-commit;
-drop table board;
+
 
 CREATE TABLE BOARD (
     SEQ NUMBER PRIMARY KEY,
@@ -27,6 +25,24 @@ CREATE TABLE BOARD (
     READCOUNT NUMBER
 );
 
+SELECT NICKNAME as nickname, TITLE, CONTENT, ATTACHMENT
+FROM BOARD
+WHERE SEQ=#{seq};
+
+INSERT INTO BOARD (NICKNAME, TITLE, CONTENT, ATTACHMENT)
+VALUES ('새로운 닉네임', '새로운 제목', '새로운 내용', '첨부파일 경로');    
+
+
+CREATE TABLE BOARD (
+    NICKNAME VARCHAR(255),
+    TITLE VARCHAR(255),
+    CONTENT VARCHAR(1000),
+    ATTACHMENT VARCHAR(255)
+);
+
+select * from board;
+commit;
+drop table board;
 
 
 
