@@ -1,0 +1,49 @@
+/* src/App.css */
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #ffafaf; /* 연한 분홍색 배경 */
+  padding: 20px; /* 바탕에 여백 추가 */
+}
+
+.board input[type="text"],
+.board textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white; /* 입력바를 흰색으로 설정 */
+  border: none;
+  border-radius: 4px;
+}
+
+.board button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #cc0000; /* 더 짙은 분홍색 */
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.board button:hover {
+  background-color: #aa0000; /* 더 어두운 분홍색 */
+}
+
+.image-preview {
+  margin-top: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+
+

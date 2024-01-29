@@ -1,0 +1,108 @@
+/* src/App.css */
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #e06c6c; /* 연한 분홍색 배경 */
+  padding: 20px; /* 바탕에 여백 추가 */
+}
+
+.board input [type=text2]
+{
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255); /* 입력바를 흰색으로 설정 */
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+.board input[type="text"],
+.board textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(250, 191, 191); /* 입력바를 흰색으로 설정 */
+  border: none;
+  border-radius: 4px;
+}
+
+.board button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #cc0000; /* 더 짙은 분홍색 */
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.board button:hover {
+  background-color: #aa0000; /* 더 어두운 분홍색 */
+}
+
+.image-preview {
+  margin-top: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+/* 모달 스타일 */
+.modal {
+  display: block; /* 모달을 보이도록 설정 */
+  position: fixed; /* 고정 위치로 설정 */
+  z-index: 1; /* 다른 요소 위에 표시 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* 배경을 반투명하게 설정 */
+}
+
+/* 모달 내용 스타일 */
+.modal-content {
+  background-color: white;
+  margin: 15% auto; /* 화면 중앙에 위치 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* 모달 닫기 버튼 스타일 */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 작성 완료 및 취소 버튼 컨테이너 스타일 */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* 버튼들을 컨테이너 양쪽으로 정렬 */
+  margin-top: 10px; /* 버튼과 내용 사이 간격 설정 */
+  
+}
+
+.button-container button {
+  margin-right: 10px; /* 오른쪽 마진을 추가하여 버튼들 간의 간격을 조절 */
+}
+
+
