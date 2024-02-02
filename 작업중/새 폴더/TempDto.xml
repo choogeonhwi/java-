@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lgy.project_server.dao.mapper.TempDaoMapper">
+    
+    <insert id="savePlanSchedule" parameterType="com.lgy.project_server.dto.TempDto">
+        INSERT INTO TEST (GAT_PLAN_DATE, GAT_PLAN_ADDR, GAT_PLAN_ADDR_DETAIL,
+        GAT_PLAN_TITLE, GAT_PLAN_DESC, GATHERING_GAT_ID)
+        VALUES (#{GAT_PLAN_DATE}, #{GAT_PLAN_ADDR}, #{GAT_PLAN_ADDR_DETAIL},
+        #{GAT_PLAN_TITLE}, #{GAT_PLAN_DESC}, #{GATHERING_GAT_ID})
+    </insert>
+
+    <!-- 일정을 주도하는 사람의 ID를 가져오는 쿼리 -->
+    <select id="getGatheringLeaderId" resultType="java.lang.String">
+        SELECT GATHERING_GAT_ID
+        FROM TEST
+        WHERE SOME_CONDITION = SOME_VALUE
+        -- 필요에 따라 WHERE 절을 추가하여 쿼리를 작성합니다.
+    </select>
+    
+</mapper>
